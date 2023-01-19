@@ -308,7 +308,7 @@ int CGxDemoApp::WndProc(UINT nMsg, WPARAM wParam, LPARAM lParam)
         // Resize swap chain
         UINT nWidth = LOWORD(lParam);
         UINT nHeight = HIWORD(lParam);
-        ResizeSC(nWidth, nHeight);
+        //ResizeSC(nWidth, nHeight);
 
         // Reinitialize matrixes
         m_projMatrix = XMMatrixPerspectiveFovLH(XM_PIDIV4, (float)nWidth / (float)nHeight, 0.01f, 100.0f);
